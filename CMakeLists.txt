@@ -34,7 +34,7 @@ endif (APPLE)
 
 # Source files
 include_directories("Common" "Tables" "Codec" "ConvertLib" "WarpLib" "Example")
-file(GLOB PUBLIC_HEADERS "Common/CFHDAllocator.h Common/CFHDDecoder.h Common/CFHDEncoder.h Common/CFHDError.h Common/CFHDMetadata.h Common/CFHDMetadataTags.h Common/CFHDSampleHeader.h Common/CFHDTypes.h")
+file(GLOB PUBLIC_HEADERS "Common/CFH*.h")
 file(GLOB CODEC_SOURCES "Codec/*.c" "Codec/*.h" "Codec/*.cpp" "WarpLib/*.c" "WarpLib/*.h" "Common/Settings.cpp")
 file(GLOB ENCODER_ALL_SOURCES ${CODEC_SOURCES} "EncoderSDK/*.cpp")
 file(GLOB DECODER_ALL_SOURCES ${CODEC_SOURCES} "DecoderSDK/*.cpp" "ConvertLib/*.cpp")
